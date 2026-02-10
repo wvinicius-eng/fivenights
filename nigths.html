@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights At Freddy's</title>
+    <link rel="stylesheet" href="./nights.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <audio id="bgm" loop>
+        <source src="./musica.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="botao-musica" onclick="document.getElementById('bgm').play()">
+        ▶ Aperte aqui
+    </button>
+
+    <div class="container">
+
+        <nav>
+            <img id="faixada" src="./imgfive/baixados (10).jpg">
+        </nav>
+
+        <h1>🎩 Freddy Fazbear's Pizza 🎩</h1>
+
+        <table>
+            <tr>
+                <th>Foto</th>
+                <th>Pizza</th>
+                <th>Ingredientes</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td class="foto">
+                    <img src="./1000650378.jpg" alt="Pizza Marguerita">
+                </td>
+                <td>Marguerita</td>
+                <td>
+                    <ul>
+                        <li>Molho de tomate</li>
+                        <li>Muçarela</li>
+                        <li>Manjericão fresco</li>
+                        <li>Azeite</li>
+                        <li>Parmesão</li>
+                    </ul>
+                </td>
+                <td class="preco">R$ 60,00</td>
+            </tr>
+
+            <tr>
+                <td class="foto">
+                    <img src="./1000650379.jpg" alt="Pizza Kids">
+                </td>
+                <td>Pizza Kids</td>
+                <td>
+                    <ul>
+                        <li>Queijo</li>
+                        <li>Sabor suave</li>
+                        <li>Toque doce</li>
+                    </ul>
+                </td>
+                <td class="preco">R$ 50,00</td>
+            </tr>
+
+            <tr>
+                <td class="foto">
+                    <img src="./1000650380.jpg" alt="Pizza de Azeitona">
+                </td>
+                <td>Pizza de Azeitona</td>
+                <td>
+                    <ul>
+                        <li>Massa</li>
+                        <li>Molho</li>
+                        <li>Muçarela</li>
+                        <li>Azeitonas</li>
+                        <li>Orégano</li>
+                    </ul>
+                </td>
+                <td class="preco">R$ 40,00</td>
+            </tr>
+
+            <tr>
+                <td class="foto">
+                    <img src="./1000650382.jpg" alt="Pizza Pepperoni">
+                </td>
+                <td>Pizza de Pepperoni</td>
+                <td>
+                    <ul>
+                        <li>Massa</li>
+                        <li>Molho</li>
+                        <li>Muçarela</li>
+                        <li>Pepperoni</li>
+                    </ul>
+                </td>
+                <td class="preco">R$ 50,00</td>
+            </tr>
+        </table>
+        <div class="back">
+            <h1>Peça aqui </h1>
+            <h1>(555) 010-4832</h1>
+            <button class="btn-voltar" onclick="history.back()">
+                ⬅ Voltar
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

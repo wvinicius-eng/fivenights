@@ -1,0 +1,353 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh;
+    background-image: url(./imgfive/FNAF\ Confetti\ Background\ 🎉.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.2);
+    background-attachment: scroll;
+}
+
+
+
+nav {
+    min-width: 100%;
+    min-height: 100px;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    border: 5px solid purple;
+    animation: piscar 1s infinite;
+    border-style: dotted;
+}
+
+@keyframes piscar {
+    0% {
+        border-color: purple;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: yellow;
+    }
+}
+
+#faixada {
+    width: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#lado1 {
+    width: 45%;
+    height: 500px;
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+}
+
+#lado1 video {
+    width: 500px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    padding: 0%;
+    margin: 0%;
+    display: block;
+    border: 5px solid purple;
+    border-radius: 20px;
+    animation: neonPiscar 1.5s infinite alternate;
+
+}
+
+@keyframes neonPiscar {
+    from {
+        box-shadow:
+            0 0 5px purple,
+            0 0 15px purple,
+            0 0 30px purple;
+    }
+
+    to {
+        box-shadow:
+            0 0 10px purple,
+            0 0 30px yellow,
+            0 0 60px purple;
+    }
+}
+
+#lado2 {
+    width: 45%;
+    height: 500px;
+    display: inline-block;
+    margin: 20px 0px 0px 80px;
+    position: fixed;
+}
+
+#lado2 p {
+    color: rgb(44, 40, 3);
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 50px 0px 30px 0px;
+    margin: 0px 90px 0px 90px;
+    background:
+
+
+        radial-gradient(circle at 20% 30%, #b30000 0 12px, transparent 13px),
+        radial-gradient(circle at 70% 40%, #b30000 0 12px, transparent 13px),
+        radial-gradient(circle at 30% 60%, #b30000 0 14px, transparent 15px),
+        radial-gradient(circle at 80% 60%, #b30000 0 14px, transparent 15px),
+
+
+        conic-gradient(from 0deg,
+            #ffcc66 0deg 45deg,
+            #ffd27f 45deg 90deg,
+            #ffcc66 90deg 135deg,
+            #ffd27f 135deg 180deg,
+            #ffcc66 180deg 225deg,
+            #ffd27f 225deg 270deg,
+            #ffcc66 270deg 315deg,
+            #ffd27f 315deg 360deg);
+
+}
+
+
+h1,
+h3 {
+    color: yellow;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.botao-imagem img {
+    width: 150px;
+    padding: 0%;
+    border-radius: 10px;
+}
+
+.pizza {
+    width: 100%;
+    height: 500px;
+    margin: 0px 0px 0px 0px;
+    background: linear-gradient(to bottom,
+            rgb(80, 20, 20) 0%,
+            rgb(80, 20, 20) 0%,
+            rgb(142, 142, 0) 33.33%,
+            rgb(142, 142, 0) 33.33%,
+            #173268 66.66%),
+        #173268 66.66%;
+
+}
+
+.pizza h1 {
+    filter: none;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+.pizza img {
+    width: 400px;
+    background: transparent;
+    mix-blend-mode: multiply;
+    display: inline-block;
+    position: relative;
+    left: 25%;
+
+}
+
+.linha-neon {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    margin: 100px 0px 0px 0px;
+    background: linear-gradient(90deg,
+            brown,
+            yellow,
+            #326bdc);
+
+    background-size: 200% 100%;
+    animation: neonFlow 3s linear infinite;
+
+    box-shadow:
+        0 0 5px brown,
+        0 0 10px yellow,
+        0 0 20px #326bdc,
+        0 0 40px #326bdc;
+}
+
+.linha-baixa {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0px 0px 100px 0px;
+    background: linear-gradient(90deg,
+            brown,
+            yellow,
+            #326bdc);
+
+    background-size: 200% 100%;
+    animation: neonFlow 3s linear infinite;
+
+    box-shadow:
+        0 0 5px brown,
+        0 0 10px yellow,
+        0 0 20px #326bdc,
+        0 0 40px #326bdc;
+}
+
+@keyframes neonFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.btn-neon {
+    padding: 18px 36px;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+    color: brown;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px;
+    position: relative;
+    left: 35%;
+    bottom: 43%;
+    transform: translate(-50%, 0);
+
+    background: linear-gradient(90deg,
+            brown,
+            yellow,
+            #326bdc);
+
+    background-size: 300% 100%;
+    animation: neonPisca 2s linear infinite;
+
+    box-shadow:
+        0 0 8px brown,
+        0 0 16px yellow,
+        0 0 32px #326bdc;
+}
+
+/* Animação das cores */
+@keyframes neonPisca {
+    0% {
+        background-position: 0% 50%;
+        filter: brightness(1);
+    }
+
+    50% {
+        background-position: 100% 50%;
+        filter: brightness(1.4);
+    }
+
+    100% {
+        background-position: 0% 50%;
+        filter: brightness(1);
+    }
+}
+
+.gif {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin: 50px 0px 0px 0px;
+}
+
+.gif img {
+    width: 250px;
+}
+
+.botao-imagem img {
+    width: 150px;
+    padding: 0%;
+    border-radius: 10px;
+}
+
+.botao-imagem {
+    padding: 0%;
+    border: none;
+    display: inline-block;
+    margin: 0px 50px 0px 90px;
+    border-radius: 10px;
+    background-image: url(./img/fundx.jpg);
+    backdrop-filter: brightness(0.3);
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: black;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.bottom {
+    margin: 200px 0px 0px 0px;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.botao-imagem:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+
+}
+
+.animatronics {
+    padding: 50px;
+}
+
+
+.segurança {
+    margin: 50px 0px 0px 0px;
+}
+
+.botao {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+     font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, purple, purple);
+
+}
